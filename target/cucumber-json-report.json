@@ -1,0 +1,321 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Make comments on post and check status code",
+        "description": "",
+        "id": "make-comments-on-a-post;make-comments-on-post-and-check-status-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I have an end point comments",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I post a comment \"my comment\" on post with title \"aut quo modi neque nostrum ducimus\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the status code is 201",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Make comments on post and check response shows added comment",
+        "description": "",
+        "id": "make-comments-on-a-post;make-comments-on-post-and-check-response-shows-added-comment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I have an end point comments",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I post a comment \"my comment\" on post with title \"aut quo modi neque nostrum ducimus\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "response includes my comment \"my comment\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Make comments on a post",
+    "description": "As a user\r\nwhen I make a comment on a post\r\nI want to see the comment added to post",
+    "id": "make-comments-on-a-post",
+    "keyword": "Feature",
+    "uri": "comments.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#  @test"
+          },
+          {
+            "line": 5,
+            "value": "#  Scenario: Make posts to server and check response code"
+          },
+          {
+            "line": 6,
+            "value": "#    Given I have an end point posts"
+          },
+          {
+            "line": 7,
+            "value": "#    When I post with title \"new book\" and body \"my name\""
+          },
+          {
+            "line": 8,
+            "value": "#    Then the status code is 200"
+          }
+        ],
+        "line": 12,
+        "name": "Make posts to server and check response code",
+        "description": "",
+        "id": "send-posts;make-posts-to-server-and-check-response-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I have an end point posts",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I request list of Posts",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the status code is 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Make posts to server and check response contains title and body",
+        "description": "",
+        "id": "send-posts;make-posts-to-server-and-check-response-contains-title-and-body",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "I have an end point posts",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I request list of Posts",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "response includes the following",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "aut amet sed",
+                  "libero voluptate eveniet aperiam sed"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Send posts",
+    "description": "",
+    "id": "send-posts",
+    "keyword": "Feature",
+    "uri": "posts.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Call users end point and check response code",
+        "description": "",
+        "id": "get-list-of-of-users;call-users-end-point-and-check-response-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I have a service to request list of users",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I request list of users",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the status code is 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Call users end point and check first user",
+        "description": "",
+        "id": "get-list-of-of-users;call-users-end-point-and-check-first-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I have a service to request list of users",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I request list of users",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "response includes username \"Bret\" and name \"Leanne Graham\" fields",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Get list of of users",
+    "description": "As a user\r\nwhen I request list of users\r\nI must see list of users",
+    "id": "get-list-of-of-users",
+    "keyword": "Feature",
+    "uri": "users.feature"
+  }
+]
